@@ -13,8 +13,8 @@
   <DataSource id="BIGQUERY_SALESORDERS">
     <resourceUri>BIGQUERY_SALESORDERS</resourceUri>
   </DataSource>
-  <DataSource id="SALESORDERITEMS">
-    <resourceUri>SALESORDERITEMS</resourceUri>
+  <DataSource id="BIGQUERY_SALESORDERITEMS">
+    <resourceUri>BIGQUERY_SALESORDERITEMS</resourceUri>
   </DataSource>
 </dataSources>
 <calculationViews>
@@ -101,7 +101,7 @@
       <mapping xsi:type="Calculation:AttributeMapping" target="BillingStatus" source="BillingStatus"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="DeliveryStatus" source="DeliveryStatus"/>
     </input>
-    <input node="SALESORDERITEMS">
+    <input node="BIGQUERY_SALESORDERITEMS">
       <mapping xsi:type="Calculation:AttributeMapping" target="SalesOrderItem" source="SalesOrderItem"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="ProductID" source="ProductID"/>
       <mapping xsi:type="Calculation:AttributeMapping" target="Quantity" source="Quantity"/>
@@ -256,7 +256,7 @@
       <upperLeftCorner x="20" y="30"/>
       <rectangleSize width="225"/>
     </shape>
-    <shape modelObjectName="SALESORDERITEMS" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+    <shape modelObjectName="BIGQUERY_SALESORDERITEMS" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
       <upperLeftCorner x="320" y="30"/>
       <rectangleSize width="254"/>
     </shape>
