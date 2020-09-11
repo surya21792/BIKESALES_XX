@@ -1,0 +1,42 @@
+ID: BIKESALES
+_schema-version: '2.1'
+description: BikeSales Project
+version: 0.0.1
+
+modules:
+ - name: HDB
+   type: hdb
+   path: HDB
+   requires:
+    - name: hdi_HDB
+      properties:
+        TARGET_CONTAINER: ~{hdi-container-name}
+
+
+
+    - name: cross-container-service-1
+      group: SERVICE_REPLACEMENTS
+
+      properties:
+        key: ServiceName_1
+        service: ~{the-service-name}
+                          
+
+
+resources:
+ - name: hdi_HDB
+   parameters:
+      config:
+         schema: BIKESALES_06
+         database_id: 8c3c6778-d1bc-46ec-99fc-fdfe8778a3a2
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+
+ - name: cross-container-service-1
+   parameters:
+      service-name: test-granter-service
+   properties:
+      the-service-name: ${service-name}
+   type: org.cloudfoundry.existing-service
+

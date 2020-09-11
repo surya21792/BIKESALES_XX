@@ -1,0 +1,15 @@
+COLUMN TABLE "SALESORDERITEMS"(
+	"SalesOrderID" NVARCHAR(5000) NOT NULL,
+	"SalesOrderItem" NVARCHAR(5000) NOT NULL,
+	"ProductID" NVARCHAR(5000),
+	"NoteID" NVARCHAR(5000),
+	"Currency" NVARCHAR(5000),
+	"GrossAmount" DOUBLE,
+	"NetAmount" DOUBLE,
+	"TaxAmount" DOUBLE,
+	"IteamAtpstatus" NVARCHAR(5000),
+	"OpItemPos" NVARCHAR(5000),
+	"Quantity" DOUBLE,
+	"QuantityUnit" NVARCHAR(5000),
+	"DeliveryDate" DATE
+)

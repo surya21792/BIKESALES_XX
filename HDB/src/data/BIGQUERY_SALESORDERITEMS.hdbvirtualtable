@@ -1,0 +1,1 @@
+VIRTUAL TABLE "BIGQUERY_SALESORDERITEMS" AT "bigquery_demo"."sap-hana-bw-es-blr"."BikeSales"."SalesOrderItems" 

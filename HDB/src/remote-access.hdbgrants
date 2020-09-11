@@ -1,0 +1,14 @@
+{
+	"test-granter-service": {
+		"object_owner": {
+			"roles": [
+				"athena_gbq_access_role"
+			]
+		},
+		"application_user": {
+			"roles": [
+				"athena_gbq_access_role"
+			]
+		}
+	}
+}
